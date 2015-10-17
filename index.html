@@ -4,15 +4,21 @@
           <title> ToDoList </title>
           <meta charset="utf-8">
           <link rel="stylesheet" href="style.css" type="text/css"/>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
       </head>
+
       <body>
-        <div class="header clear">
-            <div class="all-tasks-container clear">
-                <div class="slider-link-container float-left">
+
+
+  <div class="main-container clear">
+          <div class="hidden"></div>
+          <div class="header clear">
+              <div class="all-tasks-container clear">
+                  <div class="slider-link-container float-left">
                     <span class="slider-link float-left"></span>
                     <span class="slider-link float-left"></span>
                     <span class="slider-link float-left"></span>
-                </div>
+                  </div>
                 <h1> All tasks</h1>
                 <div class="header-icons-container float-right">
                     <i class="fa fa-search"></i>
@@ -20,43 +26,70 @@
                 </div>
           </div>
         </div>
-
-        <div class="list-vertical-navigation float-left">
+        <div class="vertical-navigation float-left">
             <div id="tasks" class="navigation-category">
+                <i class="fa fa-file-text-o"></i>
             </div>
             <div id="home"class="navigation-category">
+                <i class="fa fa-home"></i>
             </div>
             <div id="meeting" class="navigation-category">
+              <i class="fa fa-suitcase"></i>
             </div>
             <div id="work" class="navigation-category">
+              <i class="fa fa-television"></i>
             </div>
             <div id="contacts" class="navigation-category">
+              <i class="fa fa-users"></i>
+            </div>
+            <div id="settings">
+              <i class="fa fa-cog"></i>
             </div>
         </div>
 
+        <div class="tasks-container float-left clear"> <!-- все задания первой страницы-->
+
+            <div class="favorite-task clear">
+                    <div class="done-marker float-left">
+                        <i class="fa fa-circle-thin"></i>
+                    </div>
+                    <div class="favorite-task-details-box clear">
+                          <i class="fa fa-star favorite-icon float-right"></i>
+                        <div class="favorite-task-place float-left clear">
+                          <i class="fa fa-map-marker float-left"></i>
+                          <p>At Tesco</p>
+                        </div>
+                        <div class="favorite-task-time float-left">
+                          <p>Next monday</p>
+                        </div>
+                    </div>
+                    <div class="favorite-task-text">
+                        <p > Buy a new better toothbrush</p>
+                    </div>
+            </div>
+
+        </div> <!--tasks-container-->
 
 
-        <div class="add-container clear">
+
+
+                      <!-- HIDDEN-->
+
+        <div class="add-container clear hidden">
             <div class="new-task-text float-left clear">
               <form>
-                <input class="new-task" type="text" placeholder="Add a new task">
+                  <input class="new-task" type="text" placeholder="Add a new task">
               </form>
             </div>
             <div class="items-box float-right clear">
-                <div class="favorits-icon float-left">
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <div class="calendar-icon float-left">
-                    <i class="fa fa-calendar"></i>
-                </div>
-                <div class="category-icon float-left">
-                    <i class="fa fa-circle"></i>
-                </div>
+                <i class="fa fa-star-o float-left"></i>
+                <i class="fa fa-calendar float-left"></i>
+                <i class="fa fa-circle float-left"></i>
             </div>
         </div>
 
 
-        <div class="category-container clear">
+        <div class="category-container hidden clear">
             <p class="float-left"> Select a category </p>
             <div class="category-icon-container float-right clear">
               <div class="home-icon">
@@ -64,5 +97,9 @@
               </div>
             </div>
         </div>
+
+                  <!-- HIDDEN-->
+
+  </div> <!--main-container-->
       </body>
 </html>
