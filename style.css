@@ -128,22 +128,37 @@ span.slider-link:hover{
   margin-top: 150px;
   color: #505b5d;
 }
+.tasks-container {
+  width: 530px;
+  height: 530px;
+  background-color: grey;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 .favorite-task {
   width: 520px;
   height: 200px;
+  border: 1px solid #70778b;
   border-right: 10px solid #fe6d6a;
   background-color: #52596c;
-  position: absolute;
+  /*position: absolute;*/
+}
+.favorite-task .done-marker {
+  height: 198px;
 }
 .done-marker {
   width: 45px;
-  height: inherit;
   background-color: #4a4f62;
   text-align: center;
+  border: 1px solid #4d5466;
+  border-left: none;
 }
 .done-marker i {
   color: #595f6f;
   font-size: 20px;
+}
+.favorite-task .done-marker i {
   margin-top: 90px;
 }
 .fa.fa-star {
@@ -178,10 +193,71 @@ span.slider-link:hover{
   margin: 0px;
 }
 .favorite-task-text {
-  width: 400px;
+  width: 350px;
   height: 60px;
-  background-color: red;
+  /*background-color: red;*/
+  margin: 10px;
 }
+.favorite-task-text p {
+  font-size: 40px;
+  padding: 10px;
+  color: #eff0f2;
+  font-weight: lighter;
+  line-height: 60px;
+}
+.tomorrow-task {
+  width: 260px;
+  height: 80px;
+  border: 1px solid #70778b;
+  border-right: 8px solid #f1c57c;
+  border-left: none;
+  background-color: #52596c;
+  /*position: absolute;*/
+}
+.tomorrow-task .done-marker {
+  height: 78px;
+  border-right: 1px solid red;
+}
+.tomorrow-task .done-marker i {
+  margin-top: 35px;
+}
+.task-time {
+  width: 80px;
+  height: 15px;
+  padding: 5px;
+  margin-top: 15px;
+}
+.task-time p {
+  font-size: 10px;
+  color: #a7aab3;
+  padding: 0px 5px;
+  margin: 0px;
+}
+.task-text {
+  width: 170px;
+  height: 50px;
+  margin-top: 20px;
+  text-align: center;
+}
+.task-text p {
+  font-size: 14px;
+  padding: 0px;
+  color: #eff0f2;
+  font-weight: lighter;
+}
+.14-september-task {
+  width: 250px;
+  height: 160px;
+  border-right: 10px solid #2ee4bc;
+  background-color:#52596c;
+}
+.14-september-task .done-marker {
+  height: 160px;
+}
+.14-september-task .done-marker i {
+margin-top: 70px;
+}
+
 
 
 
