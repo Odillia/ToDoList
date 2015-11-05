@@ -15,18 +15,25 @@
           <div class="header clear">
             <div class="main-header clear">
                   <div class="container-button float-left">
-                  <button type="button" class="btn btn-close float-left"></button>
-                  <button type="button" class="btn btn-minimize float-left"></button>
-                  <button type="button" class="btn btn-maximize float-left"></button>
+                  <button type="button" class="btn btn-close"></button>
+                  <button type="button" class="btn btn-minimize"></button>
+                  <button type="button" class="btn btn-maximize"></button>
                   </div>
                 <h1> All tasks</h1>
                 <div class="header-icons-container float-right">
                     <i class="fa fa-search"></i>
                     <i class="fa fa-plus-circle"></i>
                 </div>
+                <div class="search-container hidden clear">
+                  <i class="fa fa-search float-left"></i>
+                  <div class="search-content float-left" contenteditable="true"></div>
+                  <div class="arrow-up"></div>
+                </div>
             </div> <!--main-header-->
 
-            <div class="add-container hidden clear">
+            <div class="add-task-container hidden">
+
+              <div class="add-container clear">
                 <div class="new-task-text float-left clear" contenteditable="true">
                   <p>Add a new task</p>
                 </div>
@@ -35,49 +42,44 @@
                     <i class="fa fa-calendar float-left"></i>
                     <i class="fa fa-circle float-left"></i>
                 </div>
-            </div>
-
-            <div class="arrow-down"> </div>
-
-            <div class="add-category-container hidden clear">
+              </div>
+              <div class="add-category-container clear">
                 <p class="float-left"> Select a category </p>
+                <div class="arrow-up"> </div>
                 <div class="category-icon-container float-right clear">
-                    <div class="category-icon float-left">
+                    <div class="category-icon home-tasks float-left">
                         <i class="fa fa-home"></i>
                     </div>
-                    <div class="category-icon float-left">
+                    <div class="category-icon work-tasks float-left">
                         <i class="fa fa-suitcase"></i>
                     </div>
-                    <div class="category-icon float-left">
+                    <div class="category-icon hobby-tasks float-left">
                         <i class="fa fa-television"></i>
                     </div>
-                    <div class="category-icon float-left">
+                    <div class="category-icon friends-tasks float-left">
                         <i class="fa fa-users"></i>
                     </div>
                 </div>
-            </div>
-
-
-
-
-
-    </div> <!--header-->
+              </div>
+          </div> <!--add-task-container-->
+</div> <!--header-->
 
         <div class="side-navigation">
+          <div id="arrow-left"></div>
             <div class="vertical-navigation float-left">
-                <button type="button" id="tasks" class="navigation-btn">
+                <button type="button" class="navigation-btn all-tasks">
                   <i class="fa fa-file-text-o"></i>
                 </button>
-                <button type="button" id="home"class="navigation-btn">
+                <button type="button" class="navigation-btn home-tasks">
                   <i class="fa fa-home"></i>
                 </button>
-                <button type="button" id="meeting" class="navigation-btn">
+                <button type="button" class="navigation-btn work-tasks">
                   <i class="fa fa-suitcase"></i>
                 </button>
-                <button type="button" id="work" class="navigation-btn">
+                <button type="button" class="navigation-btn hobby-tasks">
                   <i class="fa fa-television"></i>
                 </button>
-                <button type="button" id="contacts" class="navigation-btn">
+                <button type="button" class="navigation-btn friends-tasks">
                   <i class="fa fa-users"></i>
                 </button>
                 <button type="button" class="settings">
@@ -87,93 +89,108 @@
         </div>
 
 
-        <div class="tasks-container hidden clear"> <!-- все задания первой страницы-->
-            <div class="favorite-task clear">
-                    <button type="button" class="done-marker float-left">
+        <div class="tasks-container clear"> <!-- все задания первой страницы-->
+            <div class="favorite-task home-tasks-border clear">
+              <div class="arrow-left">  </div>
+                <div class="done-marker-container">
+                    <button type="button" class="inner float-left">
                         <i class="fa fa-circle-thin"></i>
                     </button>
-                    <div class="favorite-task-details-box clear">
+                </div>
+                <div class="favorite-task-details-box clear">
                           <i class="fa fa-star float-right"></i>
-                        <div class="task-place float-left clear">
+                        <div class="favorite-task-place float-left clear">
                           <i class="fa fa-map-marker float-left"></i>
                           <p>At Tesco</p>
                         </div>
-                        <div class="task-time float-left">
+                        <div class="favorite-task-time float-left">
                           <p>Next monday</p>
                         </div>
-                    </div>
-                        <div class="favorite-task-text">
-                            <p > Buy a new better toothbrush</p>
-                        </div>
-
+                  </div>
+                  <div class="favorite-task-text">
+                        <p > Buy a new better toothbrush</p>
+                  </div>
             </div>
-            <div class="tomorrow-task left">
-                    <button type="button" class="done-marker float-left">
+            <div class="task-container work-tasks-border left">
+                <div class="done-marker-container">
+                    <button type="button" class="inner float-left">
                         <i class="fa fa-circle-thin"></i>
                     </button>
-                    <div class="task-time float-left">
+                </div>
+                <div class="task-time float-left">
                         <p>Tomorrow</p>
-                    </div>
-                    <div class="task-text">
+                </div>
+                <div class="task-text">
                         <p>Clean my room</p>
-                    </div>
+                </div>
             </div>
-            <div class="september14-task right done-task">
-                  <button type="button" class="done-marker float-left">
-                      <i class="fa fa-circle-thin"></i>
-                  </button>
-                  <div class="task-time float-left">
-                      <p>14. September 2013</p>
-                  </div>
-                  <div class="task-text">
-                      <p>Clean the house and mauris pretium purus id sapien consectetur</p>
-                  </div>
-            </div>
-            <div class="done-task september18-task left">
-                  <button type="button" class="done-marker float-left">
-                      <i class="fa fa-circle-thin"></i>
-                  </button>
-                  <div class="task-time float-left">
-                      <p>18. September 2013</p>
-                  </div>
-                  <div class="task-text">
-                      <p>Do a homework from ipsum dolor amet, consectetur adipiscing</p>
-                  </div>
-            </div>
-            <div class="done-task october5-task right">
-                  <button type="button" class="done-marker float-left">          <!--class="done-task"-->
-                      <i class="fa fa-circle-o"></i>
-                      <i class="fa fa-check-circle"></i>
-                  </button>
-                  <div class="task-time float-left">
-                      <p>5. October 2013</p>
-                  </div>
-                  <div class="task-text">
-                      <p>Gift for Petra</p>
-                  </div>
-            </div>
-            <div class="done-task yesterday-task left">
-                <button type="button" class="done-marker float-left">          <!--class="done-task"-->
-                    <i class="fa fa-circle-o"></i>
-                    <i class="fa fa-check-circle"></i>
-                </button>
+            <div class="task-container right friends-tasks-border">
+                <div class="done-marker-container">
+                    <button type="button" class="inner float-left">
+                        <i class="fa fa-circle-thin"></i>
+                    </button>
+                </div>
                 <div class="task-time float-left">
-                    <p>Yesterday</p>
+                        <p>14. September 2013</p>
                 </div>
                 <div class="task-text">
-                    <p>Buy a milk</p>
+                        <p>Clean the house and mauris pretium purus id sapien consectetur</p>
                 </div>
             </div>
-            <div class="done-task last-week-task right">
-                <button type="button" class="done-marker float-left">
-                  <i class="fa fa-check-circle"></i>          <!--class="done-task"-->
-                    <i class="fa fa-circle-o"></i>
-                </button>
+            <div class="task-container left hobby-tasks-border">
+                <div class="done-marker-container">
+                    <button type="button" class="inner float-left">
+                        <i class="fa fa-circle-thin"></i>
+                    </button>
+                </div>
                 <div class="task-time float-left">
-                    <p>Last week</p>
+                        <p>18. September 2013</p>
                 </div>
                 <div class="task-text">
-                    <p>Call to Jakub Antalik</p>
+                        <p>Do a homework from ipsum dolor amet, consectetur adipiscing</p>
+                </div>
+            </div>
+            <div class="task-container right hobby-tasks-border">
+                <div class="done-marker-container">
+                    <button type="button" class="inner float-left">
+                        <i class="fa fa-circle-thin"></i>
+                        <i class="fa fa-check-circle"></i>
+                    </button>
+                </div>
+                <div class="task-time float-left">
+                        <p>5. October 2013</p>
+                </div>
+                <div class="task-text">
+                        <p>Gift for Petra</p>
+                </div>
+            </div>
+            <div class="task-container left friends-tasks-border">
+              <div class="done-task left"></div>
+                <div class="done-marker-container">
+                    <button type="button" class="inner float-left">
+                        <i class="fa fa-circle-thin"></i>
+                        <i class="fa fa-check-circle"></i>
+                    </button>
+                </div>
+                <div class="task-time float-left">
+                        <p>Yesterday</p>
+                </div>
+                <div class="task-text">
+                        <p>Buy a milk</p>
+                </div>
+            </div>
+            <div class="task-container right work-tasks-border">
+                <div class="done-marker-container">
+                    <button type="button" class="inner float-left">
+                        <i class="fa fa-circle-thin"></i>
+                        <i class="fa fa-check-circle"></i>
+                    </button>
+                </div>
+                <div class="task-time float-left">
+                      <p>Last week</p>
+                </div>
+                <div class="task-text">
+                      <p>Call to Jakub Antalik</p>
                 </div>
             </div>
         </div> <!--tasks-container-->
@@ -184,21 +201,22 @@
                       <!-- HIDDEN-->
 
 
-<div class="task-details-container-background clear">
-        <div class="task-details-container clear">
+<div class="task-details-container-background hidden clear">
+        <div class="task-details-container float-right clear">
               <div class="task-name clear">
                   <i class="fa fa-star-o float-right"></i>
                     <button type="button" class="task-detail-btn float-left">
                         <i class="fa fa-circle-thin"></i>
                     </button>
-                    <div class="task-detail-text-box float-left">
-                        <p> Buy a new toothbrush</p>
+                    <div class="task-detail-text-box float-right">
+                        <p class=> Buy a new toothbrush</p>
                     </div>
               </div>
               <div class="task-detail task-date clear">
                   <button type="button"  class="task-detail-btn float-left">
                       <i class="fa fa-calendar"></i>
                   </button>
+                  <div class="arrow-right"></div>
                   <div class="task-detail-text-box float-left">
                     <p>Set a due date</p>
                     </form>
@@ -232,18 +250,17 @@
                 <i class="fa fa-paperclip"></i>
               </div>
         </div>
-        <!-- <div class="arrow-right"></div> -->
+
         <div class="calendar-box">
+          <div class="month-selector">
+            <button class="prev-month-btn float-left"></button>
+            <p class="calendar-month-title float-left">September</p>
+            <button class="next-month-btn float-left"></button>
+          </div>
+          <div class="calendar-table">
           <table>
             <thead>
-              <tr class="month-selector">
-                <th colspan="7">
-                  <button type="button" class="prev-month-btn float-left"></button>
-                  <p class="calendar-month-title float-left">September</p>
-                  <button type="button" class="next-month-btn float-left"></button>
-                </th>
-              </tr>
-              <tr class="week-day">
+              <tr class="week-day" colspan="7">
                 <th>MON</th>
                 <th>TUE</th>
                 <th>WED</th>
@@ -253,9 +270,8 @@
                 <th>SUN</th>
               </tr>
             </thead>
-
-            <tbody class="tbody">
-              <tr class="month-day-selector">
+            <tbody>
+              <tr class="month-day-selector table-first-row">
                 <td class="none-active-month-day">27</td>
                 <td class="none-active-month-day">28</td>
                 <td class="none-active-month-day">29</td>
@@ -301,8 +317,8 @@
                 <td class="none-active-month-day">2</td>
               </tr>
             </tbody>
-</table>
-
+          </table>
+        </div>
         </div>
 </div>
 
