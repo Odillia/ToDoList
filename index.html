@@ -6,33 +6,30 @@
           <link rel="stylesheet" href="style.css" type="text/css"/>
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
       </head>
-
       <body>
-
-
-  <div class="main-container clear">
+      <div class="main-container clear">
           <div class="hidden"></div>
+
           <div class="header clear">
             <div class="main-header clear">
-                  <div class="container-button float-left">
+                <div class="container-buttons">
                   <button type="button" class="btn btn-close"></button>
                   <button type="button" class="btn btn-minimize"></button>
                   <button type="button" class="btn btn-maximize"></button>
-                  </div>
+                </div>
                 <h1> All tasks</h1>
-                <div class="header-icons-container float-right">
-                    <i class="fa fa-search"></i>
-                    <i class="fa fa-plus-circle"></i>
+                <div class="header-icons-container">
+                    <button><i class="fa fa-search"></i></button>
+                    <button><i class="fa fa-plus-circle"></i></button>
                 </div>
                 <div class="search-container hidden clear">
-                  <i class="fa fa-search float-left"></i>
-                  <div class="search-content float-left" contenteditable="true"></div>
+                  <i class="fa fa-search"></i>
+                  <div class="search-content" contenteditable="true"></div>
                   <div class="arrow-up"></div>
                 </div>
-            </div> <!--main-header-->
+              </div> <!--main-header-->
 
             <div class="add-task-container hidden">
-
               <div class="add-container clear">
                 <div class="new-task-text float-left clear" contenteditable="true">
                   <p>Add a new task</p>
@@ -47,39 +44,39 @@
                 <p class="float-left"> Select a category </p>
                 <div class="arrow-up"> </div>
                 <div class="category-icon-container float-right clear">
-                    <div class="category-icon home-tasks float-left">
+                    <div class="category-icon home-category">
                         <i class="fa fa-home"></i>
                     </div>
-                    <div class="category-icon work-tasks float-left">
+                    <div class="category-icon business-category">
                         <i class="fa fa-suitcase"></i>
                     </div>
-                    <div class="category-icon hobby-tasks float-left">
+                    <div class="category-icon hobby-category">
                         <i class="fa fa-television"></i>
                     </div>
-                    <div class="category-icon friends-tasks float-left">
+                    <div class="category-icon work-category">
                         <i class="fa fa-users"></i>
                     </div>
                 </div>
               </div>
           </div> <!--add-task-container-->
-</div> <!--header-->
+        </div> <!--header-->
 
         <div class="side-navigation">
-          <div id="arrow-left"></div>
-            <div class="vertical-navigation float-left">
-                <button type="button" class="navigation-btn all-tasks">
+          <div class="arrow-left"></div>
+            <div class="vertical-navigation">
+                <button type="button" class="navigation-btn all-categories-tasks">
                   <i class="fa fa-file-text-o"></i>
                 </button>
-                <button type="button" class="navigation-btn home-tasks">
+                <button type="button" class="navigation-btn home-category">
                   <i class="fa fa-home"></i>
                 </button>
-                <button type="button" class="navigation-btn work-tasks">
+                <button type="button" class="navigation-btn business-category">
                   <i class="fa fa-suitcase"></i>
                 </button>
-                <button type="button" class="navigation-btn hobby-tasks">
+                <button type="button" class="navigation-btn hobby-category">
                   <i class="fa fa-television"></i>
                 </button>
-                <button type="button" class="navigation-btn friends-tasks">
+                <button type="button" class="navigation-btn work-category">
                   <i class="fa fa-users"></i>
                 </button>
                 <button type="button" class="settings">
@@ -90,148 +87,231 @@
 
 
         <div class="tasks-container clear"> <!-- все задания первой страницы-->
-            <div class="favorite-task home-tasks-border clear">
+            <div class="main-task clear">
+              <div class="home-category border">
+              </div>
               <div class="arrow-left">  </div>
-                <div class="done-marker-container">
+                <div class="checkbox-container">
                     <button type="button" class="inner float-left">
                         <i class="fa fa-circle-thin"></i>
                     </button>
                 </div>
-                <div class="favorite-task-details-box clear">
+                <div class="main-task-details-box clear">
                           <i class="fa fa-star float-right"></i>
-                        <div class="favorite-task-place float-left clear">
+                        <div class="main-task-place float-left clear">
                           <i class="fa fa-map-marker float-left"></i>
                           <p>At Tesco</p>
                         </div>
-                        <div class="favorite-task-time float-left">
+                        <div class="hor-divider float-left">
+
+                        </div>
+                        <div class="main-task-time">
                           <p>Next monday</p>
                         </div>
                   </div>
-                  <div class="favorite-task-text">
+                  <div class="main-task-text">
                         <p > Buy a new better toothbrush</p>
                   </div>
             </div>
-            <div class="task-container work-tasks-border left">
-                <div class="done-marker-container">
-                    <button type="button" class="inner float-left">
-                        <i class="fa fa-circle-thin"></i>
-                    </button>
+
+            <div class="tasks-container-left-column float-left clear">
+              <div class="task-container">
+                <div class="business-category border"></div>
+                  <div class="checkbox-container">
+                      <button type="button" class="inner">
+                          <i class="fa fa-circle-thin"></i>
+                      </button>
+                  </div>
+                  <div class="task-time">
+                          <p>Tomorrow</p>
+                  </div>
+                  <div class="task-text">
+                          <p>Clean my room</p>
+                  </div>
+              </div>
+              <div class="task-container">
+                <div class="hobby-category border"></div>
+
+                  <div class="checkbox-container">
+                      <button type="button" class="inner">
+                          <i class="fa fa-circle-thin"></i>
+                      </button>
+                  </div>
+                  <div class="task-time">
+                          <p>18. September 2013</p>
+                  </div>
+                  <div class="task-text">
+                          <p>Do a homework from ipsum dolor amet, consectetur adipiscing</p>
+                  </div>
+              </div>
+              <div class="task-container">
+                <div class="done-overlay">
                 </div>
-                <div class="task-time float-left">
-                        <p>Tomorrow</p>
-                </div>
-                <div class="task-text">
-                        <p>Clean my room</p>
-                </div>
+                <div class="work-category border"></div>
+                  <div class="checkbox-container">
+                      <button type="button" class="inner">
+                          <i class="fa fa-circle-thin"></i>
+                          <i class="fa fa-check-circle"></i>
+                      </button>
+                  </div>
+                  <div class="task-time">
+                          <p>Yesterday</p>
+                  </div>
+                  <div class="task-text">
+                          <p>Buy a milk</p>
+                  </div>
+              </div>
             </div>
-            <div class="task-container right friends-tasks-border">
-                <div class="done-marker-container">
-                    <button type="button" class="inner float-left">
+            <div class="tasks-container-right-column float-right clear ">
+              <div class="task-container">
+                <div class="work-category border"></div>
+                <div class="checkbox-container">
+                    <button type="button" class="inner">
                         <i class="fa fa-circle-thin"></i>
                     </button>
                 </div>
-                <div class="task-time float-left">
+                <div class="task-time">
                         <p>14. September 2013</p>
                 </div>
                 <div class="task-text">
                         <p>Clean the house and mauris pretium purus id sapien consectetur</p>
                 </div>
             </div>
-            <div class="task-container left hobby-tasks-border">
-                <div class="done-marker-container">
-                    <button type="button" class="inner float-left">
-                        <i class="fa fa-circle-thin"></i>
-                    </button>
-                </div>
-                <div class="task-time float-left">
-                        <p>18. September 2013</p>
-                </div>
-                <div class="task-text">
-                        <p>Do a homework from ipsum dolor amet, consectetur adipiscing</p>
-                </div>
-            </div>
-            <div class="task-container right hobby-tasks-border">
-                <div class="done-marker-container">
-                    <button type="button" class="inner float-left">
+            <div class="task-container">
+              <div class="done-overlay"></div>
+              <div class="hobby-category border"></div>
+                <div class="checkbox-container">
+                    <button type="button" class="inner">
                         <i class="fa fa-circle-thin"></i>
                         <i class="fa fa-check-circle"></i>
                     </button>
                 </div>
-                <div class="task-time float-left">
+                <div class="task-time">
                         <p>5. October 2013</p>
                 </div>
                 <div class="task-text">
                         <p>Gift for Petra</p>
                 </div>
             </div>
-            <div class="task-container left friends-tasks-border">
-              <div class="done-task left"></div>
-                <div class="done-marker-container">
-                    <button type="button" class="inner float-left">
+            <div class="task-container">
+              <div class="done-overlay"></div>
+              <div class="business-category border"></div>
+                <div class="checkbox-container">
+                    <button type="button" class="inner">
                         <i class="fa fa-circle-thin"></i>
                         <i class="fa fa-check-circle"></i>
                     </button>
                 </div>
-                <div class="task-time float-left">
-                        <p>Yesterday</p>
-                </div>
-                <div class="task-text">
-                        <p>Buy a milk</p>
-                </div>
-            </div>
-            <div class="task-container right work-tasks-border">
-                <div class="done-marker-container">
-                    <button type="button" class="inner float-left">
-                        <i class="fa fa-circle-thin"></i>
-                        <i class="fa fa-check-circle"></i>
-                    </button>
-                </div>
-                <div class="task-time float-left">
+                <div class="task-time">
                       <p>Last week</p>
                 </div>
                 <div class="task-text">
                       <p>Call to Jakub Antalik</p>
                 </div>
             </div>
+          </div>
         </div> <!--tasks-container-->
 
-
-
-
-                      <!-- HIDDEN-->
-
-
-<div class="task-details-container-background hidden clear">
-        <div class="task-details-container float-right clear">
+        <div class="task-details-container-background clear">
+          <div class="task-details-container float-right clear">
               <div class="task-name clear">
                   <i class="fa fa-star-o float-right"></i>
-                    <button type="button" class="task-detail-btn float-left">
+                    <button type="button" class="task-detail-btn">
                         <i class="fa fa-circle-thin"></i>
                     </button>
                     <div class="task-detail-text-box float-right">
-                        <p class=> Buy a new toothbrush</p>
+                        <p>Buy a new toothbrush</p>
                     </div>
               </div>
-              <div class="task-detail task-date clear">
-                  <button type="button"  class="task-detail-btn float-left">
+              <div class="task-detail clear">
+                  <button type="button"  class="task-detail-btn">
                       <i class="fa fa-calendar"></i>
                   </button>
                   <div class="arrow-right"></div>
                   <div class="task-detail-text-box float-left">
                     <p>Set a due date</p>
-                    </form>
+                  </div>
+                  <div class="calendar-box">
+                    <div class="month-selector">
+                      <button class="prev-month-btn float-left"></button>
+                      <p class="calendar-month-title float-left">September</p>
+                      <button class="next-month-btn float-left"></button>
+                    </div>
+                    <div class="calendar-table">
+                    <table>
+                      <thead>
+                        <tr class="week-day">
+                          <th>MON</th>
+                          <th>TUE</th>
+                          <th>WED</th>
+                          <th>THU</th>
+                          <th>FRI</th>
+                          <th>SAT</th>
+                          <th>SUN</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="empty-space"></tr>
+                        <tr class="month-day-selector">
+                          <td class="none-active-month-day">27</td>
+                          <td class="none-active-month-day">28</td>
+                          <td class="none-active-month-day">29</td>
+                          <td class="none-active-month-day">30</td>
+                          <td class="none-active-month-day">31</td>
+                          <td class="active-month-day">1</td>
+                          <td class="active-month-day">2</td>
+                        </tr>
+                        <tr class="month-day-selector">
+                          <td class="active-month-day">3</td>
+                          <td class="active-month-day">4</td>
+                          <td class="active-month-day">5</td>
+                          <td class="active-month-day">6</td>
+                          <td class="active-month-day">7</td>
+                          <td class="active-month-day">8</td>
+                          <td class="active-month-day">9</td>
+                        </tr>
+                        <tr class="month-day-selector">
+                          <td class="active-month-day">10</td>
+                          <td class="active-month-day">11</td>
+                          <td class="selected-day">12</td>
+                          <td class="active-month-day">13</td>
+                          <td class="today">14</td>
+                          <td class="active-month-day">15</td>
+                          <td class="active-month-day">16</td>
+                        </tr>
+                        <tr class="month-day-selector">
+                          <td class="active-month-day">17</td>
+                          <td class="active-month-day">18</td>
+                          <td class="active-month-day">19</td>
+                          <td class="active-month-day">20</td>
+                          <td class="active-month-day">21</td>
+                          <td class="active-month-day">22</td>
+                          <td class="active-month-day">23</td>
+                        </tr>
+                        <tr class="month-day-selector">
+                          <td class="active-month-day">24</td>
+                          <td class="active-month-day">25</td>
+                          <td class="active-month-day">26</td>
+                          <td class="active-month-day">27</td>
+                          <td class="active-month-day">28</td>
+                          <td class="none-active-month-day">1</td>
+                          <td class="none-active-month-day">2</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                   </div>
               </div>
-              <div class="task-detail task-reminder clear">
-                  <button type="button"  class="task-detail-btn float-left">
+              <div class="task-detail clear">
+                  <button type="button"  class="task-detail-btn">
                       <i class="fa fa-clock-o"></i>
                   </button>
                   <div class="task-detail-text-box float-left">
                       <p>Set a reminder</p>
                   </div>
               </div>
-              <div class="task-detail task-category clear">
-                  <button type="button" class="task-detail-btn float-left">
+              <div class="task-detail clear">
+                  <button type="button" class="task-detail-btn">
                       <i class="fa fa-circle"></i>
                   </button>
                   <div class="task-detail-text-box float-left">
@@ -239,87 +319,19 @@
                   </div>
               </div>
               <div class="add-note clear">
-                  <button type="button" class="task-detail-btn float-left">
+                  <button type="button" class="task-detail-btn">
                     <i class="fa fa-pencil-square-o"></i>
                   </button>
                   <div class="task-detail-text-box float-left" contenteditable="true">
                       <p>Add note</p>
                   </div>
               </div>
-              <div class="attachment-icon right">
+              <button class="attachment-icon">
                 <i class="fa fa-paperclip"></i>
-              </div>
+              </button>
         </div>
 
-        <div class="calendar-box">
-          <div class="month-selector">
-            <button class="prev-month-btn float-left"></button>
-            <p class="calendar-month-title float-left">September</p>
-            <button class="next-month-btn float-left"></button>
-          </div>
-          <div class="calendar-table">
-          <table>
-            <thead>
-              <tr class="week-day" colspan="7">
-                <th>MON</th>
-                <th>TUE</th>
-                <th>WED</th>
-                <th>THU</th>
-                <th>FRI</th>
-                <th>SAT</th>
-                <th>SUN</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="month-day-selector table-first-row">
-                <td class="none-active-month-day">27</td>
-                <td class="none-active-month-day">28</td>
-                <td class="none-active-month-day">29</td>
-                <td class="none-active-month-day">30</td>
-                <td class="none-active-month-day">31</td>
-                <td class="active-month-day">1</td>
-                <td class="active-month-day">2</td>
-              </tr>
-              <tr class="month-day-selector">
-                <td class="active-month-day">3</td>
-                <td class="active-month-day">4</td>
-                <td class="active-month-day">5</td>
-                <td class="active-month-day">6</td>
-                <td class="active-month-day">7</td>
-                <td class="active-month-day">8</td>
-                <td class="active-month-day">9</td>
-              </tr>
-              <tr class="month-day-selector">
-                <td class="active-month-day">10</td>
-                <td class="active-month-day">11</td>
-                <td class="selected-day">12</td>
-                <td class="active-month-day">13</td>
-                <td class="today">14</td>
-                <td class="active-month-day">15</td>
-                <td class="active-month-day">16</td>
-              </tr>
-              <tr class="month-day-selector">
-                <td class="active-month-day">17</td>
-                <td class="active-month-day">18</td>
-                <td class="active-month-day">19</td>
-                <td class="active-month-day">20</td>
-                <td class="active-month-day">21</td>
-                <td class="active-month-day">22</td>
-                <td class="active-month-day">23</td>
-              </tr>
-              <tr class="month-day-selector">
-                <td class="active-month-day">24</td>
-                <td class="active-month-day">25</td>
-                <td class="active-month-day">26</td>
-                <td class="active-month-day">27</td>
-                <td class="active-month-day">28</td>
-                <td class="none-active-month-day">1</td>
-                <td class="none-active-month-day">2</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        </div>
+
 </div>
 
 
