@@ -21,15 +21,16 @@
                 <div class="header-icons-container">
                     <button><i class="fa fa-search"></i></button>
                     <button><i class="fa fa-plus-circle"></i></button>
+                    <button><i class="fa fa-times-circle" style="display:none"></i></button>
                 </div>
-                <div class="search-container hidden clear">
+                <div class="search-container hidden">
                   <i class="fa fa-search"></i>
                   <div class="search-content" contenteditable="true"></div>
                   <div class="arrow-up"></div>
                 </div>
               </div> <!--main-header-->
 
-            <div class="add-task-container hidden">
+            <div class="add-task-container clear">
               <div class="add-container clear">
                 <div class="new-task-text float-left clear" contenteditable="true">
                   <p>Add a new task</p>
@@ -40,7 +41,7 @@
                     <i class="fa fa-circle float-left"></i>
                 </div>
               </div>
-              <div class="add-category-container clear">
+              <div class="add-category-container">
                 <p class="float-left"> Select a category </p>
                 <div class="arrow-up"> </div>
                 <div class="category-icon-container float-right clear">
@@ -105,7 +106,7 @@
                         <div class="hor-divider float-left">
 
                         </div>
-                        <div class="main-task-time">
+                        <div class="main-task-time float-left">
                           <p>Next monday</p>
                         </div>
                   </div>
@@ -117,7 +118,7 @@
             <div class="tasks-container-left-column float-left clear">
               <div class="task-container">
                 <div class="business-category border"></div>
-                  <div class="checkbox-container">
+                  <div class="checkbox-container next-task-marker">
                       <button type="button" class="inner">
                           <i class="fa fa-circle-thin"></i>
                       </button>
@@ -144,9 +145,8 @@
                           <p>Do a homework from ipsum dolor amet, consectetur adipiscing</p>
                   </div>
               </div>
-              <div class="task-container">
-                <div class="done-overlay">
-                </div>
+              <div class="task-container done-task-container">
+                <div class="done-overlay"></div>
                 <div class="work-category border"></div>
                   <div class="checkbox-container">
                       <button type="button" class="inner">
@@ -177,7 +177,7 @@
                         <p>Clean the house and mauris pretium purus id sapien consectetur</p>
                 </div>
             </div>
-            <div class="task-container">
+            <div class="task-container done-task-container">
               <div class="done-overlay"></div>
               <div class="hobby-category border"></div>
                 <div class="checkbox-container">
@@ -193,7 +193,7 @@
                         <p>Gift for Petra</p>
                 </div>
             </div>
-            <div class="task-container">
+            <div class="task-container done-task-container">
               <div class="done-overlay"></div>
               <div class="business-category border"></div>
                 <div class="checkbox-container">
@@ -212,14 +212,14 @@
           </div>
         </div> <!--tasks-container-->
 
-        <div class="task-details-container-background clear">
+        <div class="task-details-container-background hidden">
           <div class="task-details-container float-right clear">
               <div class="task-name clear">
                   <i class="fa fa-star-o float-right"></i>
                     <button type="button" class="task-detail-btn">
                         <i class="fa fa-circle-thin"></i>
                     </button>
-                    <div class="task-detail-text-box float-right">
+                    <div class= "task-detail-text-box" style="float: right">
                         <p>Buy a new toothbrush</p>
                     </div>
               </div>
@@ -228,7 +228,7 @@
                       <i class="fa fa-calendar"></i>
                   </button>
                   <div class="arrow-right"></div>
-                  <div class="task-detail-text-box float-left">
+                  <div class="task-detail-text-box">
                     <p>Set a due date</p>
                   </div>
                   <div class="calendar-box">
@@ -306,15 +306,15 @@
                   <button type="button"  class="task-detail-btn">
                       <i class="fa fa-clock-o"></i>
                   </button>
-                  <div class="task-detail-text-box float-left">
+                  <div class="task-detail-text-box">
                       <p>Set a reminder</p>
                   </div>
               </div>
               <div class="task-detail clear">
                   <button type="button" class="task-detail-btn">
-                      <i class="fa fa-circle"></i>
+                      <i class="fa fa-circle" style="color: #2ce4be"></i>
                   </button>
-                  <div class="task-detail-text-box float-left">
+                  <div class="task-detail-text-box">
                       <p> Work</p>
                   </div>
               </div>
@@ -322,7 +322,7 @@
                   <button type="button" class="task-detail-btn">
                     <i class="fa fa-pencil-square-o"></i>
                   </button>
-                  <div class="task-detail-text-box float-left" contenteditable="true">
+                  <div class="task-detail-text-box" contenteditable="true">
                       <p>Add note</p>
                   </div>
               </div>
@@ -330,10 +330,6 @@
                 <i class="fa fa-paperclip"></i>
               </button>
         </div>
-
-
 </div>
-
-
       </body>
 </html>
