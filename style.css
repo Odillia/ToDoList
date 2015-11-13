@@ -286,6 +286,7 @@ button {
 .settings i {
   font-size: 20px;
   color: #505b5d;
+  cursor: pointer;
 }
 .tasks-container {
   width: 530px;
